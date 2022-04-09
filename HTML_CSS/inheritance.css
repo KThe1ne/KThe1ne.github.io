@@ -1,0 +1,22 @@
+.failure, .warning, .success {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+.success {
+  background-color: green;
+}
+
+.warning {
+  background-color: yellow;
+}
+
+.failure {
+  background-color: red;
+}
+
+/*# sourceMappingURL=inheritance.css.map */
