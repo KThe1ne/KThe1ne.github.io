@@ -1,4 +1,7 @@
-
+html, body{
+    margin: 0px;
+    padding:0px;
+}
 div.logo1{
     margin: 0px;
     background-color: orange;
@@ -29,26 +32,37 @@ div div h1.logo {
 div.menu {
     background-color:rgb(240, 215, 142);
     z-index: -1;
-    margin: 0px;
     position: absolute;
     top: 0px;
-    height: 50px;
+    left: 0px;
+    height: 80px;
     width: 100%;
-    padding: 10px;
-    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
 }
-div.menu span{
-    margin: 5px;
+div.menu div{
     font-weight: bold;
-    font-size: 14px;
+    font-size: 14px;  
 }
+
+#menu-left{
+    margin-left: auto;
+}
+
 div.menu input{
     border: none;
     border-bottom: 2px solid black;
     background-color: transparent;
+    margin-left: auto;
 }
 div.menu input::placeholder{
     color: black;
+}
+div.menu button{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
 }
 #picture{
     position: relative;
@@ -72,15 +86,21 @@ div.menu input::placeholder{
     padding: 25px;
     text-align: justify;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
-#bannersticker h1{
-    text-align: center;
-}
+
 #bannersticker button{
+    margin-top: 10px;
     border:none;
     background-color: orange;
     color: white;
     height: 50px;
     padding: 10px;
+}
 
+#bannersticker button:hover{
+    background-color: rgb(240, 215, 142);
+    color: black;
+    font-weight: bold;
 }
