@@ -1,0 +1,86 @@
+
+div.logo1{
+    margin: 0px;
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    z-index: 0;
+    position:absolute;
+    top:0;
+    left:0;
+    }
+div > div.logo{
+    border: 3px solid white; 
+    display: flex;
+    padding: 10px;
+
+}
+div div h1.logo {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 10px;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 0px;
+}
+div.menu {
+    background-color:rgb(240, 215, 142);
+    z-index: -1;
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    padding-top: 30px;
+}
+div.menu span{
+    margin: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+div.menu input{
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+}
+div.menu input::placeholder{
+    color: black;
+}
+#picture{
+    position: relative;
+    z-index: -2;
+    height: 300px;
+    width: 100%;
+
+}
+
+#picture img{
+    object-fit: fill;
+    height: 800px;
+    width: 100%
+}
+
+#bannersticker{
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    margin-left: 100px;
+    padding: 25px;
+    text-align: justify;
+    align-items: center;
+}
+#bannersticker h1{
+    text-align: center;
+}
+#bannersticker button{
+    border:none;
+    background-color: orange;
+    color: white;
+    height: 50px;
+    padding: 10px;
+
+}
