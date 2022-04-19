@@ -38,6 +38,11 @@ body{
     width: 80px;
 }
 
+.top a:visited, a:link{
+    text-decoration: none;  
+    color: white;
+}
+
 
 .search{
     display: flex;
@@ -54,11 +59,6 @@ body{
     letter-spacing: 1px;
 }
 
-.images{
-    margin-top: -10px;
-    margin-left: 220px;
-    color: #4487f6;
-}
 
 #searchbar{
     display: block;
@@ -68,6 +68,20 @@ body{
     border-radius: 24px;
     height: 40px;
     background: #202124;
+}
+
+.searchbuttons{
+    display: flex;
+    padding: 30px ;
+    justify-content: center;
+}
+.searchbuttons > input{
+    border: none;
+    color: #e8eaed;
+    background: #303134;
+    border-radius: 6px;
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
 }
 
 
