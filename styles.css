@@ -3,9 +3,11 @@ body{
     margin: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 * {
     box-sizing: border-box;
 }
+
 .header{
     display: flex;
     background-color: aqua;
@@ -36,6 +38,7 @@ a {
     font-weight: 800;
     flex-shrink: 0;
 }
+
 .logo::before{
     content: "";
     position: absolute;
@@ -43,4 +46,69 @@ a {
     width: 80%;
     margin: 5px;
     border: 2px white solid;
+}
+
+.right-menu{
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.right-menu button{
+    border: none;
+}
+
+.right-menu input{
+    border: none
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.bannerimg{
+    max-height: 600px;
+    width: 100vw;
+    object-fit: cover;
+    display: block;
+
+}
+
+.banner{
+    position: relative;
+}
+
+.cta{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 20%;
+    border: 2px white solid;
+    height: 80%;
+    width: 20%;
+    bottom: 10px;
+    padding: 5px;
+    border: none;
+    border-right: 2px solid white;
+    font-size: 0.5rem;
+    justify-content: flex-end;
+}
+
+.bannerbtn{
+    align-content: center;
+    
+
+}
+
+.cta-text{
+}
+
+.overlay{
+    top: 0px;
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 20%;
 }
