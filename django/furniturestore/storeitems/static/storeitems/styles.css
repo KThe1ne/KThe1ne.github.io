@@ -1,0 +1,176 @@
+html, 
+body{
+    width: 100%;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    background-color: aqua;
+    height: 10vh;
+    column-gap: 10px;
+    align-items: center;
+    width: 100%;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    z-index: 2;
+    background-color: aquamarine;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    row-gap: 5px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.logo::before{
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    margin: 5px;
+    border: 2px white solid;
+}
+
+.right-menu{
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.right-menu button{
+    border: none;
+}
+
+.right-menu input{
+    border: none
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%
+}
+
+.bannerimg{
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.banner{
+    position: relative;
+}
+
+.cta{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 10%;
+    border: 2px white solid;
+    height: 80%;
+    width: 30%;
+    bottom: 10px;
+    padding: 5px;
+    border: none;
+    border-right: 2px solid white;
+    font-size: 0.5rem;
+    justify-content: space-around;
+    flex-shrink: 1;
+    align-items: center;
+
+}
+
+.cta-right{
+    position: absolute;
+    left: 45%;
+    bottom: 10px;
+    height: 80%;
+    width: 50%;
+}
+
+.cta-right p{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: x-large;
+    color: white;
+}
+
+.bannerbtn{
+    border: none;
+    
+}
+
+.cta-text{
+    font-size: clamp(0.5vw, 2vh, 2vh);
+}
+
+.overlay{
+    top: 0px;
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 20%;
+}
+
+.card-box{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    width: clamp(200px, 300px, 350px);
+    border: 2px solid black;
+    padding: 20px;
+    background-color: aquamarine;
+    align-items: center;
+}
+
+.card div{
+    align-self: stretch;
+    height: 100%;
+    background-image: url("furniture.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+
+.card p{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+
+.footer{
+    border-top: 1px solid black;
+}

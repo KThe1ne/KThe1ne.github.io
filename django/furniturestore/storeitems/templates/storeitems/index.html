@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture Store</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{% static 'storeitems/styles.css' %}">
 </head>
 <body>
     <div class="header">
@@ -18,12 +19,12 @@
         <div><a href="#" class="left-menu">About Us</a></div>
         <div class="right-menu">
             <input placeholder="Find Product" >
-            <button href="#" >Your Account</button>
+            <button href="#">Your Account</button>
         </div>
     </div>
     <div class="body">
         <div class="banner">
-            <img class="bannerimg" src="furniture.jpg" alt="bannerimage">
+            <img class="bannerimg" src="{% static 'storeitems/furniture.jpg' %}" alt="bannerimage">
             <div class="overlay">""</div>
             <div class="cta">
                 <div class="cta-text"><p>Find products with the highest quality</p></div>
@@ -33,10 +34,19 @@
                 <div class="cta-text"><p>Lorem ipsum.</p></div>
             </div>
         </div>
-        <div class="card">Card 1</div>
+        <div class="card-box">  
+            {% for item in items%} 
+                <div class="card">
+                    <div></div>
+                    <p>{{ item.type }}</p>
+                    <span>${{ item.price }}</span>
+                    <p>{{ item.description }}</p>
+                </div>
+            {% endfor %}
+        </div>
     </div>
     <div class="footer">
-
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti natus molestiae aperiam architecto odio possimus. Voluptatem ipsum beatae, quam voluptatibus laborum quas odio ad asperiores, commodi hic ex molestias facere?</p>
     </div>
 </body>
 </html>
